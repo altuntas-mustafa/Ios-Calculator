@@ -3,88 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: lightblue;
 }
-.container {
+footer{
+    text-align: center;
+    margin: 1vw;
+    color: rgba(191, 191, 191, 0.651)
+    
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 15rem ;
+    width: 23rem;
+    height: auto;
     margin: auto;
+    justify-content: center;
     background-color: black;
-    width: 25%;
-    height: 80%;
-    border: 0.1vw solid black;
-    border-radius: 4vw;
-    margin-top: 3vw;
+    border-radius: 2.1rem;
 }
 .hesaplar {
-    margin-left: 0.8vw;
-    margin-bottom: 1vw;
-    display: grid; 
-    grid-template-columns: 6vw 6vw 6vw 6vw;
-    grid-template-rows: 6vw 6vw 6vw 6vw 6vw;
+    display: grid;
+    grid-template-columns:repeat(4,5rem) ;
+    grid-template-rows: repeat(5,5rem);
+    row-gap: 0.3rem;
+    column-gap: 0.5rem;
+    padding: 0.9rem;
 }
 .button {
-    width: 5vw;
-    height: 5vw;
-    border: 0.1vw solid black;
-    border-radius: 50vw;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
-.btn17 {
-    width: 11vw;
-    padding-top: 1vw;
+
+#screen{
+    position: relative;
+    display: grid;
+    grid-template-rows: 5rem 5rem;
+    padding: 0.9rem;
+    bottom: -3rem;
 }
-#result1 {
-    position: absolute;
-    right: 40vw;
-    font-size: 3vw;
-    max-width: 14vw;
-    background-color: black;
-    border: 0.1vw solid black;
-    border-radius: 50vw;
-    color: white;
-    padding-right: 0.5vw;
-    height: 3vw;
+#screen1 , #screen2{
+    max-width: 20rem;
     text-align: right;
-}
-#result2 {
-    position: absolute;
-    right: 40vw;
-    font-size: 3vw;
-    max-width: 14vw;
-    background-color: black;
-    border: 0.1vw solid black;
-    border-radius: 50vw;
+    font-size: 4rem;
+    font-weight: 500;
     color: white;
-    padding-right: 0.5vw;
-    height: 3vw;
-    text-align: right;
+    text-overflow:ellipsis;
+    margin: 5px;
+    overflow: hidden;
+    
 }
+#screen1{
+    color: #9f9f9f;
+    font-weight: 300;
+    font-size: 3rem;
+}
+#screen2{
+    direction: rtl;
+}
+.status{
+    position: absolute;
+    margin: -38px 0px 0 260px;
+
+}
+.clock{
+    position: absolute;
+    margin: -38px 300px 0 25px;
+    color: white;
+}
+    
 .btn1 , .btn2,.btn3 {
     background-color: #A5A5A5;
     color: black;
-    font-size: 2.5vw;
+
 }
 .btn4, .btn8, .btn12, .btn16, .btn19 {
     background-color: #F29E4B;
     color: white;
-    font-size: 2.5vw;
+
 }
 .btn5,.btn6,.btn7,.btn9,.btn10,.btn11,.btn13,.btn14,.btn15,.btn17,.btn18 {
     background-color: #333333;
     color: white;
-    font-size: 2.5vw;
+
 }
 .btn17 {
-    text-align: left;
-    padding-left: 3vw;
-    padding-bottom: 1vw;
     grid-column: 1/3;
-    grid-row: 5;
+    border-radius: 2.5rem;
 }
 .button:hover {
     background-color: rgba(191, 191, 191, 0.5);
 }
-footer {
-    text-align: center;
-    color: rgba(191, 191, 191, 0.7);
-    margin-bottom: 1vw;
+
+img{
+    width: 85px;
+}
+.clock{
+    position: absolute;
+    margin: -38px 300px 0 25px;
+    color: white;
+}
+.content-top{
+    position: relative;
 }
