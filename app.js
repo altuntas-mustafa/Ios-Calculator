@@ -60,7 +60,7 @@ container.addEventListener("click", (e) => {
 
                     result1.innerHTML= "ERROR";
                     result2.innerHTML = "";
-                    total = 0
+                    total = "0";
     
                     }
                     else{
