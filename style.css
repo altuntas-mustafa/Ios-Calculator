@@ -19,6 +19,7 @@ footer{
     grid-template-rows: 15rem ;
     width: 23rem;
     height: auto;
+    margin-top: 1rem;
     margin: auto;
     justify-content: center;
     background-color: black;
